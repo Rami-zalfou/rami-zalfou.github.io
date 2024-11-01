@@ -41,7 +41,9 @@ body {
     background-color: #ffffff;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
+    overflow: visible; /* Ensures no hidden overflow */
+    max-height: none; /* Removes any max-height that might cut off text */
+    white-space: normal; /* Allows text to wrap normally */
 }
 
 h2 {
