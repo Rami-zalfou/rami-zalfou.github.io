@@ -6,8 +6,8 @@ body {
 }
 
 .container {
-    display: flex;
-    align-items: flex-start; /* Aligns items at the top to avoid height matching */
+    display: inline-flex;
+    align-items: flex-start;
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
@@ -16,17 +16,19 @@ body {
 
 /* Sidebar (Profile Box) Styles */
 .profile-box {
-    width: 30%;
+    min-width: 30%;        /* Minimum width, but will expand if necessary */
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 5px;
     box-sizing: border-box;
+    flex-shrink: 0;        /* Prevents it from shrinking */
 }
 
 .profile-box h1 {
-    font-family: 'Oswald', sans-serif;
+   font-family: 'Oswald', sans-serif;
     font-size: 32px;
     margin-top: 0;
+    white-space: nowrap;   /* Keeps name on one line */
 }
 
 .profile-img {
