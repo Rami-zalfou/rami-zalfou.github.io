@@ -16,14 +16,14 @@ body {
 
 /* Sidebar (Profile Box) Styles */
 .profile-box {
-   width: auto;             /* Allows the box to size based on content */
-    min-width: 200px;        /* Minimum width for layout consistency */
-    max-width: 300px;        /* Maximum width to prevent it from being too large */
+   width: auto;           /* Allows the box to auto-size based on content */
+    min-width: 250px;      /* Ensures a minimum width for layout consistency */
+    max-width: 30%;        /* Sets a maximum width to prevent overflow */
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 5px;
     box-sizing: border-box;
-    flex-shrink: 0;
+    flex-shrink: 0;        /* Prevents shrinking below min-width */
 }
 
 .profile-box h1 {
