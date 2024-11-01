@@ -5,36 +5,49 @@ body {
     padding: 0;
 }
 
-/* Header and Section Headers */
-h1 {
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Sidebar (Profile Box) Styles */
+.profile-box {
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.profile-box h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 32px;
+    margin-top: 0;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Main Content Styles */
+.text-content {
+    width: 70%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 28px;
     color: #333;
-}
-
-/* Profile Box (Sidebar) Styles */
-.profile-box {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.profile-box img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-/* Main Content Styles */
-.text-content {
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Link Styles */
@@ -45,4 +58,12 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Footer Styles */
+.footer-text {
+    color: #b5bec9;
+    font-size: 0.8em;
+    text-align: right;
+    margin-top: 20px;
 }
