@@ -16,14 +16,14 @@ body {
 
 /* Sidebar (Profile Box) Styles */
 .profile-box {
-    width: auto;           /* Allows the box to auto-size based on content */
-    min-width: 250px;      /* Ensures a minimum width for layout consistency */
-    max-width: 40%;        /* Sets a maximum width to prevent overflow */
+   width: auto;             /* Allows the box to size based on content */
+    min-width: 200px;        /* Minimum width for layout consistency */
+    max-width: 300px;        /* Maximum width to prevent it from being too large */
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 5px;
     box-sizing: border-box;
-    flex-shrink: 0;        /* Prevents shrinking below min-width */
+    flex-shrink: 0;
 }
 
 .profile-box h1 {
@@ -34,10 +34,13 @@ body {
 }
 
 .profile-img {
-    max-width: 100%;       /* Ensures the image scales within the box */
+    width: 80%;              /* Set to a percentage of the box width */
     height: auto;
     border-radius: 5px;
     margin-bottom: 15px;
+    display: block;          /* Centers the image within the box */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Main Content Styles */
