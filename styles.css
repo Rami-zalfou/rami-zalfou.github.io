@@ -80,3 +80,21 @@ a:hover {
     text-align: right;
     margin-top: 20px;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stacks the sidebar and main content vertically */
+    }
+
+    .profile-box {
+        width: 100%;          /* Full width on mobile */
+        max-width: 100%;      /* Remove max-width restriction */
+        margin-bottom: 20px;  /* Adds space below the sidebar */
+    }
+
+    .text-content {
+        width: 100%;          /* Full width on mobile */
+        max-width: 100%;      /* Remove max-width restriction */
+    }
+}
