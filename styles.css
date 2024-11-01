@@ -6,10 +6,9 @@ body {
     padding: 0;
 }
 
+/* Container Styles */
 .container {
-    display: flex;
-    align-items: flex-start;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -23,12 +22,14 @@ h2 {
 
 /* Profile Box (Sidebar) Styles */
 .profile-box {
-    width: 30%; /* Adjust as needed */
     background-color: #f4f4f4;
     padding: 20px;
-    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.name-title {
     font-family: 'Oswald', sans-serif;
-    font-size: 18px;
+    font-size: 32px;
 }
 
 .profile-box img {
@@ -37,11 +38,15 @@ h2 {
     border-radius: 5px;
 }
 
+.cv-link {
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+}
+
 /* Main Content Styles */
 .text-content {
-    width: 65%;
-    padding: 20px;
     background-color: #ffffff;
+    padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
